@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 586444c11bddf5f48a1c025b6967bba1, type: 3}
+  m_Name: 02ChoiceEvent
+  m_EditorClassIdentifier: 
+  title: "\uB3CC\uC544\uAC04\uB2E4"
+  contents:
+  - "\uB098\uB294 \uC774 \uD3D0\uAC00\uC5D0 \uC788\uC744 \uC6A9\uAE30\uAC00 \uB3C4\uC800\uD788
+    \uC5C6\uB2E4."
+  - "\uB098\uB294 \uBB38\uC744 \uBC15\uCC28\uACE0 \uC5F4\uBA70 \uB3C4\uB9DD\uCCD0
+    \uC9D1\uC73C\uB85C \uB3CC\uC544\uAC14\uB2E4."
+  ChoiceEvent: []
+  ResultEffect: []

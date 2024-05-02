@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e2fe47d11030a64eaa02647bd6b7b11, type: 3}
+  m_Name: BackStreet
+  m_EditorClassIdentifier: 
+  PlaceName: "\uB4B7\uACE8\uBAA9"
+  NomalEvent: {fileID: 11400000, guid: a3d3a9dc1d7828a4bac52849ebb0379f, type: 2}
+  HiddenEvent: {fileID: 11400000, guid: c66a773f170401340969be9e128509c2, type: 2}

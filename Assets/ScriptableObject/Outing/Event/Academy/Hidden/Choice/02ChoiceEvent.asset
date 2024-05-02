@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 586444c11bddf5f48a1c025b6967bba1, type: 3}
+  m_Name: 02ChoiceEvent
+  m_EditorClassIdentifier: 
+  title: "\uBA54\uC774\uB4DC \uD074\uB798\uC2A4"
+  contents:
+  - "\uB098\uB294 \uBA54\uC774\uB4DC \uD074\uB798\uC2A4\uB97C \uB4E3\uAE30\uB85C
+    \uD588\uB2E4. \uBA54\uC774\uB4DC \uD074\uB798\uC2A4 \uC218\uC5C5\uC5D0\uC11C\uB294
+    \uBA54\uC774\uB4DC\uC758 \uD589\uB3D9 \uBC29\uCE68\uACFC \uB9D0\uD22C \uB4F1\uC744
+    \uC54C\uB824\uC92C\uB2E4."
+  - "\uADFC\uB370 \uC774\uB7F0\uAC78 \uD559\uC6D0\uC5D0\uC11C \uC65C \uAC00\uB974\uCCD0\uC8FC\uB294\uAC70\uC9C0..?
+    \uC758\uBB38\uC810\uC774 \uB4E4\uC5C8\uC9C0\uB9CC, \uC7AC\uBC0C\uC5C8\uC73C\uB2C8\uAE4C
+    \uB410\uC9C0. \uB77C\uACE0 \uC0DD\uAC01\uD558\uBA70 \uC218\uC5C5\uC774 \uB05D\uB098\uACE0
+    \uC9D1\uC73C\uB85C \uB3CC\uC544\uAC14\uB2E4."
+  ChoiceEvent: []
+  ResultEffect: []

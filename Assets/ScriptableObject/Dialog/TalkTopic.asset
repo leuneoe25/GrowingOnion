@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03a392ea087f3ee4e9613e0c6adb84fe, type: 3}
+  m_Name: TalkTopic
+  m_EditorClassIdentifier: 
+  topic: "\uB9D0\uAC78\uAE30"
+  dialogTypes:
+  - TypeName: "1. \uC88B\uC740 \uB9D0 \uD558\uAE30"
+    dialogTypeEffects:
+    - onionStat: 9
+      value: 1
+    - onionStat: 11
+      value: 1
+  - TypeName: "2. \uB098\uC05C \uB9D0 \uD558\uAE30"
+    dialogTypeEffects:
+    - onionStat: 9
+      value: 1
+    - onionStat: 15
+      value: 1
+  - TypeName: "3. \uACE0\uBBFC \uB9D0\uD558\uAE30"
+    dialogTypeEffects:
+    - onionStat: 9
+      value: 1
+    - onionStat: 17
+      value: 1

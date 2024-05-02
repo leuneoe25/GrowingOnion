@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 586444c11bddf5f48a1c025b6967bba1, type: 3}
+  m_Name: HiddenEvent
+  m_EditorClassIdentifier: 
+  title: 
+  contents:
+  - "\uC591\uD30C\uC640 \uAE30\uB3C4\uB97C \uC62C\uB9AC\uACE0 \uC788\uB358 \uB3C4\uC911,
+    \uBAA9\uC0AC\uB2D8\uC774 \uC6B0\uB9AC\uC5D0\uAC8C \uB9D0\uC744 \uAC78\uC5C8\uB2E4."
+  - "\uBAA9\uC0AC\uB2D8\uC774 \uC6B0\uB9AC\uC5D0\uAC8C \uC2E0\uC5D0 \uB300\uD55C
+    \uBBFF\uC74C\uC774 \uB9CE\uC73C\uBA74 \uC790\uC2E0\uACFC \uAC19\uC774 \uAE30\uB3C4\uB97C
+    \uD558\uC790\uACE0 \uD55C\uB2E4. \uAC19\uC774 \uD560\uAE4C..?"
+  ChoiceEvent:
+  - events:
+    - {fileID: 11400000, guid: efb105cd6d8a13c4f8395c18e134b941, type: 2}
+  - events:
+    - {fileID: 11400000, guid: 88364aa8b9f738a489d40b7e298821c1, type: 2}
+  ResultEffect: []
