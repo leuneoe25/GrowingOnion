@@ -6,6 +6,7 @@ using UnityEngine;
 public class GameData : ScriptableObject
 {
     public string PhonePath;
+    public int[] EncyclopediaOnion;
     public MyOnionData onionData;
 
     public void OnionDataReset()
@@ -15,6 +16,13 @@ public class GameData : ScriptableObject
         {
             onionData.Stat.Add(0);
         }
+
+        EncyclopediaOnion = new int[60];
+        for (int i = 0; i < 60; i++)
+        {
+            EncyclopediaOnion[i] = 0;
+        }
+
         onionData.moisture = 100;
         onionData.sunlight = 100;
 
