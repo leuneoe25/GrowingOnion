@@ -5,9 +5,11 @@ using UnityEngine;
 public class EncyclopediaSystem : MonoBehaviour
 {
     [SerializeField] private GameObject EncyclopediaUI;
+    [SerializeField] protected EncyclopediaBook encyclopediaBook;
     public void OpenEncyclopedia()
     {
         EncyclopediaUI.SetActive(true);
+        encyclopediaBook.InitPage(1);
     }
     public void CloseEncyclopedia()
     {

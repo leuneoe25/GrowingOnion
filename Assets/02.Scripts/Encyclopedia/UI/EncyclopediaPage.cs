@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EncyclopediaPage : MonoBehaviour
 {
     [SerializeField] private List<GameObject> Contents;
+    public EncyclopediaDetail encyclopediaDetail;
 
     public void InitContents(int[] EncyclopediaOnion, List<Onion> onionsData, EncyclopediaPageRange pageRange)
     {
@@ -21,6 +23,7 @@ public class EncyclopediaPage : MonoBehaviour
 
             if (EncyclopediaOnion[index] >= 1)
             {
+                Contents[i].GetComponent<EncyclopediaElement>().encyclopediaDetail = encyclopediaDetail;
                 Contents[i].GetComponent<EncyclopediaElement>().ShowInfo(index,onionsData[index]);
             }
             else

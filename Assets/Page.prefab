@@ -135,6 +135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac59e937cc9c22b448b5b9f5a07b0d37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  encyclopediaDetail: {fileID: 0}
   OnionImage: {fileID: 3473690763174314733}
   OnionName: {fileID: 1707651863143029893}
 --- !u!1 &1037196853510578075
@@ -272,6 +273,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac59e937cc9c22b448b5b9f5a07b0d37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  encyclopediaDetail: {fileID: 0}
   OnionImage: {fileID: 7628994840853630985}
   OnionName: {fileID: 5496459954052212434}
 --- !u!1 &1107797526250821080
@@ -634,6 +636,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac59e937cc9c22b448b5b9f5a07b0d37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  encyclopediaDetail: {fileID: 0}
   OnionImage: {fileID: 38902079187052706}
   OnionName: {fileID: 316411669837161693}
 --- !u!1 &1728043943835755048
@@ -803,11 +806,11 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 10.37
+  m_fontSize: 12.55
   m_fontSizeBase: 10.37
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 3.8
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
@@ -1130,6 +1133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac59e937cc9c22b448b5b9f5a07b0d37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  encyclopediaDetail: {fileID: 0}
   OnionImage: {fileID: 3264377159617752317}
   OnionName: {fileID: 4407714626663762041}
 --- !u!1 &4894297154968875119
@@ -1224,11 +1228,11 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 10.37
+  m_fontSize: 12.55
   m_fontSizeBase: 10.37
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 3.8
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
@@ -1401,6 +1405,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac59e937cc9c22b448b5b9f5a07b0d37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  encyclopediaDetail: {fileID: 0}
   OnionImage: {fileID: 9213011384510832702}
   OnionName: {fileID: 1555022971730401932}
 --- !u!1 &5445935278388746345
@@ -1570,11 +1575,11 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 10.37
+  m_fontSize: 12.55
   m_fontSizeBase: 10.37
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 3.8
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
@@ -1747,6 +1752,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac59e937cc9c22b448b5b9f5a07b0d37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  encyclopediaDetail: {fileID: 0}
   OnionImage: {fileID: 7444243976652528325}
   OnionName: {fileID: 4011715119429653762}
 --- !u!1 &5824696234111972489
@@ -1841,6 +1847,7 @@ MonoBehaviour:
   - {fileID: 4991559483041516003}
   - {fileID: 3166778709120988478}
   - {fileID: 983417406007045180}
+  encyclopediaDetail: {fileID: 0}
 --- !u!1 &6105174101819328841
 GameObject:
   m_ObjectHideFlags: 0
@@ -1976,6 +1983,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac59e937cc9c22b448b5b9f5a07b0d37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  encyclopediaDetail: {fileID: 0}
   OnionImage: {fileID: 1403837726143473781}
   OnionName: {fileID: 8285544613747761082}
 --- !u!1 &6180200510411151580
@@ -2070,11 +2078,11 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 10.37
+  m_fontSize: 12.55
   m_fontSizeBase: 10.37
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 3.8
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
@@ -2247,6 +2255,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac59e937cc9c22b448b5b9f5a07b0d37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  encyclopediaDetail: {fileID: 0}
   OnionImage: {fileID: 7993341891861159599}
   OnionName: {fileID: 8740626742533932863}
 --- !u!1 &6883091065971155727
@@ -2341,11 +2350,11 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 10.37
+  m_fontSize: 12.55
   m_fontSizeBase: 10.37
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 3.8
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
@@ -2518,6 +2527,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac59e937cc9c22b448b5b9f5a07b0d37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  encyclopediaDetail: {fileID: 0}
   OnionImage: {fileID: 362428873125291183}
   OnionName: {fileID: 6116458935510752222}
 --- !u!1 &7732778639285340473
@@ -2612,11 +2622,11 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 10.37
+  m_fontSize: 12.55
   m_fontSizeBase: 10.37
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 3.8
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
@@ -2746,11 +2756,11 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 10.37
+  m_fontSize: 12.55
   m_fontSizeBase: 10.37
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 3.8
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
@@ -2955,11 +2965,11 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 10.37
+  m_fontSize: 12.55
   m_fontSizeBase: 10.37
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 3.8
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
@@ -3164,11 +3174,11 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 10.37
+  m_fontSize: 12.55
   m_fontSizeBase: 10.37
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 3.8
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 using static UnityEditor.Progress;
@@ -7,6 +8,7 @@ using static UnityEditor.Progress;
 public class EncyclopediaBook : MonoBehaviour
 {
     [SerializeField] private GameData gameData;
+    [SerializeField] private EncyclopediaDetail encyclopediaDetail;
     [SerializeField] private GameObject EncyclopediaPagePrefab;
 
     [SerializeField] private Button LeftChangePageButton;
@@ -50,18 +52,24 @@ public class EncyclopediaBook : MonoBehaviour
         InitPage(NowPage);
         ChagePage(Vector2.right);
     }
-    private void InitPage(int index)
+    public void InitPage(int index)
     {
-        if(transform.childCount < index)
+        GameObject page;
+        if (transform.childCount < index)
         {
-            GameObject page =Instantiate(EncyclopediaPagePrefab, transform);
-
-            EncyclopediaPageRange pageRange = new EncyclopediaPageRange((index - 1) * 9, ((index - 1) * 9) + 8);
-            if (pageRange.end > 59)
-                pageRange.end = 59;
-
-            page.GetComponent<EncyclopediaPage>().InitContents(gameData.EncyclopediaOnion, onions, pageRange);
+            page =Instantiate(EncyclopediaPagePrefab, transform);
+            page.GetComponent<EncyclopediaPage>().encyclopediaDetail = encyclopediaDetail;
         }
+        else
+        {
+            page = transform.GetChild(index - 1).gameObject;
+        }
+
+        EncyclopediaPageRange pageRange = new EncyclopediaPageRange((index - 1) * 9, ((index - 1) * 9) + 8);
+        if (pageRange.end > 59)
+            pageRange.end = 59;
+
+        page.GetComponent<EncyclopediaPage>().InitContents(gameData.EncyclopediaOnion, onions, pageRange);
     }
     private void ChagePage(Vector2 dir)
     {
