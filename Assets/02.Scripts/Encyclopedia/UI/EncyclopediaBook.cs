@@ -10,6 +10,7 @@ public class EncyclopediaBook : MonoBehaviour
     [SerializeField] private GameData gameData;
     [SerializeField] private EncyclopediaDetail encyclopediaDetail;
     [SerializeField] private GameObject EncyclopediaPagePrefab;
+    [SerializeField] private GameObject BookObject;
 
     [SerializeField] private Button LeftChangePageButton;
     [SerializeField] private Button RightChangePageButton;
@@ -55,14 +56,14 @@ public class EncyclopediaBook : MonoBehaviour
     public void InitPage(int index)
     {
         GameObject page;
-        if (transform.childCount < index)
+        if (BookObject.transform.childCount < index)
         {
-            page =Instantiate(EncyclopediaPagePrefab, transform);
+            page = Instantiate(EncyclopediaPagePrefab, BookObject.transform);
             page.GetComponent<EncyclopediaPage>().encyclopediaDetail = encyclopediaDetail;
         }
         else
         {
-            page = transform.GetChild(index - 1).gameObject;
+            page = BookObject.transform.GetChild(index - 1).gameObject;
         }
 
         EncyclopediaPageRange pageRange = new EncyclopediaPageRange((index - 1) * 9, ((index - 1) * 9) + 8);
@@ -74,10 +75,10 @@ public class EncyclopediaBook : MonoBehaviour
     private void ChagePage(Vector2 dir)
     {
         if (dir == Vector2.right)
-            gameObject.GetComponent<RectTransform>().anchoredPosition = 
-                new Vector3(gameObject.GetComponent<RectTransform>().anchoredPosition.x- 238, 0, 0);
+            BookObject.GetComponent<RectTransform>().anchoredPosition = 
+                new Vector3(BookObject.GetComponent<RectTransform>().anchoredPosition.x- 238, 0, 0);
         else if (dir == Vector2.left)
-            gameObject.GetComponent<RectTransform>().anchoredPosition =
-                new Vector3(gameObject.GetComponent<RectTransform>().anchoredPosition.x + 238, 0, 0);
+            BookObject.GetComponent<RectTransform>().anchoredPosition =
+                new Vector3(BookObject.GetComponent<RectTransform>().anchoredPosition.x + 238, 0, 0);
     }
 }

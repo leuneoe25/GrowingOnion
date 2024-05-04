@@ -9,6 +9,7 @@ public class EncyclopediaSystem : MonoBehaviour
     public void OpenEncyclopedia()
     {
         EncyclopediaUI.SetActive(true);
+
         encyclopediaBook.InitPage(1);
     }
     public void CloseEncyclopedia()
