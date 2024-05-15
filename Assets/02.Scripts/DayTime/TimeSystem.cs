@@ -22,6 +22,7 @@ public class TimeSystem : MonoBehaviour
         if(nowTime == DayTime.Evening)
         {
             //날짜 변경
+            GameManager.Instance.EndDayEvent();
 
             //날짜 변경 이벤트
 

@@ -58,7 +58,7 @@ public class DialogSystem : MonoBehaviour
                     for(int j = 0; j < dialogType[index].dialogTypeEffects.Count;j++)
                     {
                         GameManager.Instance.SetOnionStat(dialogType[index].dialogTypeEffects[j].onionStat,
-                            dialogType[index].dialogTypeEffects[j].value);
+                            dialogType[index].dialogTypeEffects[j].value,true);
                         //Debug.Log($"Add {dialogType[index].dialogTypeEffects[j].onionStat.ToString()} +{}");
                     }
                     HideUI();

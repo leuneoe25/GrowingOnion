@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -9,6 +10,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] private TimeSystem timeSystem;
     [SerializeField] private UIManager uiManager;
     [SerializeField] private GameData gameData;
+    [SerializeField] private MoistureSunlightSystem moistureSunlightSystem;
+
+    public Action NextDayEvent;
 
     #region <singleton>
     private static GameManager instance = null;
@@ -28,25 +32,37 @@ public class GameManager : MonoBehaviour
     #endregion
     void Start()
     {
-        //timeSystem.AddChangeTimeEvent((time) =>
-        //{
-        //    text.text = "Time\n" + time.ToString();
-        //});
-        //button.onClick.AddListener(() =>
-        //{
-        //    NextRoutine();
-        //});
+        
 
         //Onion Data Reset
-        gameData.OnionDataReset();
+        //gameData.OnionDataReset();
     }
     public void NextRoutine()
     {
         timeSystem.GotoNextTime();
     }
-    public void SetOnionStat(OnionStat stat, int value)
+    public void SetOnionStat(OnionStat stat, int value,bool effectText = false)
     {
         gameData.onionData.Stat[(int)stat] += value;
-        uiManager.ShowStatMessage(stat, value);
+        if (effectText)
+            uiManager.ShowStatMessage(stat, value);
+    }
+    public void SetOnionStat(TypeEffect onionStatEffect, bool effectText = false)
+    {
+        gameData.onionData.Stat[(int)onionStatEffect.onionStat] += onionStatEffect.value;
+        if(effectText)
+            uiManager.ShowStatMessage(onionStatEffect.onionStat, onionStatEffect.value);
+    }
+    public void SetMoisture(int value)
+    {
+        gameData.onionData.moisture += value;
+    }
+    public void EndDayEvent()
+    {
+        moistureSunlightSystem.Execute();
+    }
+    public void GameEnd()
+    {
+
     }
 }

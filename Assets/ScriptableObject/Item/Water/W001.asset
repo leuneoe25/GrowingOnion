@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83eb036021df3004d82fccd06d2dec4e, type: 3}
+  m_Name: W001
+  m_EditorClassIdentifier: 
+  Name: "\uC14B\uB2E4\uBB3C"
+  description: "\uADF8\uB798\uB3C4 \uC218\uB3D7\uBB3C\uBCF4\uB2E4\uB294 \uB0AB\uC9C0!
+    \uADF8\uB798! \uC774\uAC8C \uBB3C\uC774\uC9C0! \uC774\uAC8C \uC2DC\uC6D0\uD568\uC774\uACE0!"
+  water: 25
+  typeEffect:
+    onionStat: 0
+    value: 0
+  doubleStat: 0

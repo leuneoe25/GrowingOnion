@@ -9,6 +9,10 @@ public class GameData : ScriptableObject
     public int[] EncyclopediaOnion;
     public MyOnionData onionData;
 
+    [Header("Item")]
+    public List<MyNutrient> myNutrients;
+    public List<MyWater> myWater;
+
     public void OnionDataReset()
     {
         onionData.Stat = new List<int>();
@@ -22,6 +26,9 @@ public class GameData : ScriptableObject
         {
             EncyclopediaOnion[i] = 0;
         }
+
+        myNutrients = new List<MyNutrient>();
+        myWater = new List<MyWater>();
 
         onionData.moisture = 100;
         onionData.sunlight = 100;
