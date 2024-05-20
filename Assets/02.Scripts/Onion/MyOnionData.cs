@@ -10,7 +10,12 @@ public class MyOnionData : ScriptableObject
     public List<int> Stat;
     public int moisture;
     public int sunlight;
+
+    [Header("Count")]
     public int outingCount;
+    public int talkCount;
+    public int phoneCount;
+    public int dayCount;
 
     public void GetStat(OnionStat stat, int value = 1)
     {
@@ -23,10 +28,10 @@ public enum OnionStat
 {
     knowledge,
     belief,
-    concentric,
+    innocence,
     alcohol,
     oldPower,
-    feer,
+    fear,
     contactForce,
     game,
     muscle,
@@ -44,8 +49,13 @@ public enum OnionStat
 }
 
 [Serializable]
-public class TypeEffect
+public class StatValue
 {
     public OnionStat onionStat;
     public int value;
+    public StatValue(OnionStat onionStat, int value)
+    {
+        this.onionStat = onionStat;
+        this.value = value;
+    }
 }

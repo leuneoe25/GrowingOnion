@@ -7,7 +7,7 @@ using UnityEngine;
 public class DialogType
 {
     public string TypeName;
-    public List<TypeEffect> dialogTypeEffects;
+    public List<StatValue> dialogTypeEffects;
 }
 
 //[Serializable]

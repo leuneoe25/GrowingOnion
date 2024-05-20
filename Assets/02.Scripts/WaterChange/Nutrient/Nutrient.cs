@@ -10,5 +10,5 @@ public class Nutrient : ScriptableObject
     public Sprite NutrientSprite;
 
     [Header("Effect")]
-    public TypeEffect typeEffect;
+    public StatValue typeEffect;
 }

@@ -7,6 +7,9 @@ public class GameData : ScriptableObject
 {
     public string PhonePath;
     public int[] EncyclopediaOnion;
+    public int onionPoint;
+    public int gameCount;
+    
     public MyOnionData onionData;
 
     [Header("Item")]

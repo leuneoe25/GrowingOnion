@@ -9,7 +9,7 @@ public class OutingEvent : ScriptableObject
     public string title;
     public List<string> contents;
     public List<OutingChoiceEvent> ChoiceEvent;
-    public List<TypeEffect> ResultEffect;
+    public List<StatValue> ResultEffect;
 }
 
 [Serializable]

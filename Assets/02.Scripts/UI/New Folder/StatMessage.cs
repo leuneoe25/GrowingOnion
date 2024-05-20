@@ -59,13 +59,13 @@ public class StatMessage : MonoBehaviour
                 return "지식";
             case OnionStat.belief:
                 return "신념";
-            case OnionStat.concentric:
+            case OnionStat.innocence:
                 return "동심";
             case OnionStat.alcohol:
                 return "알코올";
             case OnionStat.oldPower:
                 return "꼰대력";
-            case OnionStat.feer:
+            case OnionStat.fear:
                 return "공포";
             case OnionStat.contactForce:
                 return "주접력";

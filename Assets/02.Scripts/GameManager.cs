@@ -47,7 +47,7 @@ public class GameManager : MonoBehaviour
         if (effectText)
             uiManager.ShowStatMessage(stat, value);
     }
-    public void SetOnionStat(TypeEffect onionStatEffect, bool effectText = false)
+    public void SetOnionStat(StatValue onionStatEffect, bool effectText = false)
     {
         gameData.onionData.Stat[(int)onionStatEffect.onionStat] += onionStatEffect.value;
         if(effectText)

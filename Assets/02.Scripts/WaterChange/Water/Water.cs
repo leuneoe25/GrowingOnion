@@ -11,7 +11,7 @@ public class Water : ScriptableObject
 
     [Header("Effect")]
     public int water;
-    public TypeEffect typeEffect;
+    public StatValue typeEffect;
     public bool doubleStat;
 
 }
