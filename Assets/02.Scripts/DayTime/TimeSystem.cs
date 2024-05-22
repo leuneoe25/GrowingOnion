@@ -14,7 +14,7 @@ public class TimeSystem : MonoBehaviour
     void Start()
     {
         nowTime = DayTime.Morning;
-        text.text = "Day-" + Day.ToString();
+        text.text = Day.ToString();
     }
 
     public void GotoNextTime()
@@ -36,7 +36,7 @@ public class TimeSystem : MonoBehaviour
     private void GotoNextDay()
     {
         Day++;
-        text.text = "Day-" + Day.ToString();
+        text.text = Day.ToString();
         nowTime = DayTime.Morning;
     }
 

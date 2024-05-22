@@ -16,7 +16,9 @@ public class EncyclopediaPage : MonoBehaviour
             index = pageRange.begain + i;
             if(index > pageRange.end)
             {
-                Contents[i].SetActive(false);
+                //Contents[i].SetActive(false);
+                Contents[i].GetComponent<CanvasGroup>().alpha = 0;
+                Contents[i].GetComponent<CanvasGroup>().interactable = false;
                 continue;
             }
 

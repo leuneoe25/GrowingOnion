@@ -10,11 +10,13 @@ public class EncyclopediaElement : MonoBehaviour
 
     [SerializeField] private Image OnionImage;
     [SerializeField] private TMP_Text OnionName;
+    [SerializeField] private TMP_Text OnionNumder;
     public void ShowInfo(int index,Onion onion)
     {
         //Sprite sprite = Resources.Load<Sprite>(onion.OnionImagePath);
         OnionImage.color = Color.white;
-        OnionName.text = $"No.{index+1} {onion.OnionName}";
+        OnionNumder.text = (index + 1).ToString();
+        OnionName.text = onion.OnionName;
 
         GetComponent<Button>().onClick.AddListener(() =>
         {
@@ -25,6 +27,7 @@ public class EncyclopediaElement : MonoBehaviour
     {
         //Sprite sprite = Resources.Load<Sprite>(onion.OnionImagePath);
         OnionImage.color = Color.black;
-        OnionName.text = $"No.{index+1} ???";
+        OnionNumder.text = (index + 1).ToString();
+        OnionName.text = "???";
     }
 }

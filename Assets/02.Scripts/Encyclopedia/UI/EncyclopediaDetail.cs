@@ -23,9 +23,10 @@ public class EncyclopediaDetail : MonoBehaviour
     public void ShowDetail(Onion onion,Sprite onionSprite)
     {
         InitDetail(onion, onionSprite);
-
+        DetailObject.GetComponent<CanvasGroup>().alpha = 0;
         DarkBackground.color = new Color(0, 0, 0, 0);
-        DetailObject.transform.localScale = new Vector3(0.7f, 0.7f, 0.7f);
+        DetailObject.GetComponent<CanvasGroup>().DOFade(1, 0.3f);
+        DetailObject.transform.localScale = new Vector3(0f, 0f, 0f);
         DarkBackground.gameObject.SetActive(true);
         DetailObject.gameObject.SetActive(true);
 
@@ -35,11 +36,12 @@ public class EncyclopediaDetail : MonoBehaviour
 
     public void HideDetail()
     {
+        DetailObject.GetComponent<CanvasGroup>().DOFade(0, 0.3f);
         DarkBackground.DOFade(0, 0.3f).OnComplete(() =>
         {
             DarkBackground.gameObject.SetActive(false);
         });
-        DetailObject.transform.DOScale(new Vector3(0.7f, 0.7f, 0.7f), 0.3f).SetEase(Ease.InOutCubic).OnComplete(() =>
+        DetailObject.transform.DOScale(new Vector3(0f, 0f, 0f), 0.3f).SetEase(Ease.InOutCubic).OnComplete(() =>
         {
             DetailObject.gameObject.SetActive(false);
         });
